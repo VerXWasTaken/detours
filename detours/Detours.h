@@ -4,7 +4,7 @@
 
 namespace Detours
 {
-	static_assert(sizeof(uintptr_t) == sizeof(void *));
+	static_assert(sizeof(uintptr_t) == sizeof(void *), "error: static assertion failed.");
 
 	const static uint32_t DISASM_MAX_INSTRUCTIONS	= 50;		// Maximum number of instructions to decode at once
 
